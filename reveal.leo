@@ -20,7 +20,7 @@
 <v t="amd.20150919102541.1"><vh>pelican 與 Markdown</vh></v>
 </v>
 </v>
-<v t="amd.20150919102739.1" a="E"><vh>專案架構</vh>
+<v t="amd.20150919102739.1"><vh>專案架構</vh>
 <v t="amd.20150919113520.1"><vh>@edit .gitignore</vh></v>
 <v t="amd.20150919103428.1"><vh>reveal.js 設定</vh></v>
 <v t="amd.20150919103341.1"><vh>Jupyter 設定</vh>
@@ -35,9 +35,9 @@
 </v>
 <v t="amd.20150919113957.1"><vh>以下為 pelican 文章</vh></v>
 <v t="amd.20150919124128.1"><vh>@button pelican content</vh></v>
-<v t="amd.20150919114010.1"><vh>@path pelican\content</vh>
-<v t="leo.20151108144318.1"><vh>@edit 2015cphww1.md</vh></v>
-</v>
+<v t="amd.20150919114010.1"><vh>@path pelican\content</vh></v>
+<v t="leo.20151108145605.1"><vh>@edit 2015cphww1.md</vh></v>
+<v t="leo.20151108145608.1"><vh>@edit 2015cphww2.md</vh></v>
 <v t="amd.20150919120205.1"><vh>以下為 reveal 投影片</vh></v>
 <v t="amd.20150913233943.1"><vh>@clean cadpbw1.html</vh>
 <v t="amd.20150913233943.2" a="E"><vh>html</vh>
@@ -294,6 +294,21 @@
 </v>
 </v>
 <v t="leo.20151108144334.10"><vh>script</vh></v>
+</v>
+</v>
+</v>
+<v t="leo.20151108145139.1" a="E"><vh>@clean simplest2.html</vh>
+<v t="leo.20151108145139.2"><vh>檔案說明</vh></v>
+<v t="leo.20151108145139.3" a="E"><vh>html 標註</vh>
+<v t="leo.20151108145139.4" a="E"><vh>body 標註</vh>
+<v t="leo.20151108145139.5" a="E"><vh>div class="reveal"</vh>
+<v t="leo.20151108145139.6" a="E"><vh>div class="slides"</vh>
+<v t="leo.20151108145139.7"><vh>有關我的作業</vh></v>
+<v t="leo.20151108145139.8"><vh>作業任務一</vh></v>
+<v t="leo.20151108145139.9"><vh>第3張投影片</vh></v>
+</v>
+</v>
+<v t="leo.20151108145139.10"><vh>script</vh></v>
 </v>
 </v>
 </v>
@@ -2285,6 +2300,80 @@ Diff...
     &lt;p&gt;上課時學習比較慢,多虧有同學的幫助,讓我順利完成
 我給自己的評分:75分&lt;/p&gt;
     &lt;p&gt;可以連結到內部投影片&lt;a href="#/hw-task-one"&gt;作業任務一&lt;/a&gt;
+&lt;/section&gt;
+				
+</t>
+<t tx="leo.20151108145139.1">@language xml
+@tabwidth -4
+@others
+
+</t>
+<t tx="leo.20151108145139.10">&lt;script src="lib/js/head.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/reveal.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+&lt;/script&gt;
+	
+</t>
+<t tx="leo.20151108145139.2">&lt;!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 &lt;section&gt;&lt;/section&gt; 標示
+且支援平行與垂直的投影片配置方法
+--&gt;
+</t>
+<t tx="leo.20151108145139.3">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;最簡單的 reveal 超文件&lt;/title&gt;
+&lt;link rel="stylesheet" href="css/reveal.min.css"&gt;
+	&lt;link rel="stylesheet" href="css/theme/default.css" id="theme"&gt;	
+	&lt;!--增加對於 IE 早期版本的支援 --&gt;
+	&lt;!--[if lt IE 9]&gt;
+	&lt;script src="lib/js/html5shiv.js"&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+&lt;/head&gt;
+@others
+</t>
+<t tx="leo.20151108145139.4">&lt;body&gt;
+@others
+&lt;/body&gt;
+</t>
+<t tx="leo.20151108145139.5">&lt;!-- 將整個投影片包在 "reveal" class 中 --&gt;
+&lt;div class="reveal"&gt;
+@others
+&lt;/div&gt;
+</t>
+<t tx="leo.20151108145139.6">&lt;!-- 將所有投影片包在 "slides" class 中 --&gt;
+&lt;div class="slides"&gt;
+@others
+&lt;/div&gt;
+</t>
+<t tx="leo.20151108145139.7">&lt;!-- 以下為投影片 --&gt;
+&lt;!-- 每一個 section 都代表一張投影片,  --&gt;
+&lt;!-- section 標註中的多 section 標註, 將往下垂直延伸 --&gt;
+&lt;section&gt;
+    &lt;h1&gt;四設二乙&lt;/h1&gt;
+    &lt;p&gt;40323211 朱柏蔚 11/1&lt;/p&gt;		
+&lt;/section&gt;
+	
+</t>
+<t tx="leo.20151108145139.8">&lt;section id="hw-task-one"&gt;
+    &lt;h1&gt;作業任務二&lt;/h1&gt;
+    &lt;p&gt;練習solvespace.exe 繪圖→練習後畫好截圖→把圖丟進資料夾images→推回去git add -A →git commit -m "a"→git push origin gh-pages
+&lt;/p&gt;
+    &lt;p&gt;請參考 &lt;a href="http://www.google.com"&gt;Google&lt;/a&gt;
+&lt;/section&gt;
+				
+</t>
+<t tx="leo.20151108145139.9">&lt;section&gt;
+    &lt;h1&gt;自評&lt;/h1&gt;
+    &lt;p&gt;畫圖對我來說還蠻難的,後面找人幫忙,最後多花點時間終於完成了
+我給自己的評分:70分&lt;/p&gt;
+    &lt;p&gt;可以連結到內部投影片&lt;a href="#/hw-task-one"&gt;作業任務二&lt;/a&gt;
 &lt;/section&gt;
 				
 </t>
