@@ -10,7 +10,7 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="amd.20150913232631.1" a="E"><vh>@settings</vh>
+<v t="amd.20150913232631.1"><vh>@settings</vh>
 <v t="amd.20150913232631.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="amd.20150913232631.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 <v t="amd.20150915153206.1" a="E"><vh>專案說明</vh>
@@ -36,7 +36,7 @@
 <v t="amd.20150919113957.1"><vh>以下為 pelican 文章</vh></v>
 <v t="amd.20150919124128.1"><vh>@button pelican content</vh></v>
 <v t="amd.20150919114010.1"><vh>@path pelican\content</vh></v>
-<v t="leo.20151108145605.1"><vh>@edit 2015cphww1.md</vh></v>
+<v t="leo.20151108160100.1"><vh>@edit 2015cphww1.md</vh></v>
 <v t="leo.20151108145608.1"><vh>@edit 2015cphww2.md</vh></v>
 <v t="amd.20150919120205.1"><vh>以下為 reveal 投影片</vh></v>
 <v t="amd.20150913233943.1"><vh>@clean cadpbw1.html</vh>
@@ -504,7 +504,7 @@
 </v>
 </v>
 </v>
-<v t="leo.20151108144234.2" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20151108144234.2"><vh>Recovered Nodes</vh>
 <v t="leo.20151108144234.3"><vh>Recovered node "html 標註" from @clean simplest.html</vh>
 <v t="leo.20151108144234.4"><vh>old:html 標註</vh></v>
 <v t="leo.20151108144234.5"><vh>new:html 標註</vh></v>
